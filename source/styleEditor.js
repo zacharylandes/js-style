@@ -1,3 +1,9 @@
 $(document).ready(function(){
-  // your code goes here.
+  $('.sub').click(function(){
+    var sel = $('#selector').val();
+    var prop = $('#property').val();
+    var vals = $('#vals').val();
+    event.preventDefault();
+    $(`${sel}`).css(`${prop}`,`${vals}`);
+  })
 });
